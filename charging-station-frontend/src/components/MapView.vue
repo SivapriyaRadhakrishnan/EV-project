@@ -19,7 +19,7 @@ export default {
   async mounted() {
     const token = localStorage.getItem('token')
     try {
-      const res = await axios.get('http://localhost:5000/api/stations', {
+      const res = await axios.get('https://ev-project-backend-17g4.onrender.com/api/stations', {
         headers: { Authorization: `Bearer ${token}` }
       })
 
