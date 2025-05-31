@@ -1,4 +1,4 @@
-Summary
+# Summary
 
 In this project, I developed a complete end-to-end web application for charging station management and location-based recommendations, integrating both visual UI and backend intelligence. The goal was to simplify the management of electric vehicle (EV) charging stations, while also delivering a smooth, user-friendly experience with real-time map visualization, filtering, and station tracking.On the frontend, I built a responsive single-page application using Vue 3 and Bootstrap 5, allowing users to register, log in, and manage charging stations through an intuitive interface. Key UI features include an interactive map powered by Leaflet.js and filter panels with support for connector types, power range, and station status.The backend is powered by Node.js and Express, featuring a secure JWT-based authentication system and RESTful APIs for station management. All user and station data is stored in MongoDB Atlas, and the app was deployed using Render 
 
