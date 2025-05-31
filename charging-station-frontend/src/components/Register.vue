@@ -45,14 +45,14 @@ export default {
       this.success = ''
       try {
         // Step 1: Register the user
-        await axios.post('http://localhost:5000/api/auth/register', {
+        await axios.post('https://ev-project-backend-17g4.onrender.com/api/auth/register', {
           name: this.name,
           email: this.email,
           password: this.password
         })
 
         // Step 2: Automatically log in
-        const loginRes = await axios.post('http://localhost:5000/api/auth/login', {
+        const loginRes = await axios.post('https://ev-project-backend-17g4.onrender.com/api/auth/login', {
           email: this.email,
           password: this.password
         })
