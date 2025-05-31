@@ -1,5 +1,5 @@
 <template>
-  <div :class="bodyClass">
+  <div :class="bodyClass" :style="bgStyle">
     <AppNavbar v-if="showNavbar" />
     <router-view />
   </div>
@@ -7,6 +7,7 @@
 
 <script>
 import AppNavbar from './components/Navbar.vue'
+import bgImage from '@/assets/logoev2.jpg' // 
 
 export default {
   name: 'App',
@@ -22,18 +23,25 @@ export default {
       return {
         'with-bg': this.$route.path !== '/map'
       }
+    },
+    bgStyle() {
+      return this.$route.path !== '/map'
+        ? {
+            backgroundImage: `url(${bgImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
+            minHeight: '100vh'
+          }
+        : {}
     }
   }
 }
 </script>
 
-<style>
-.with-bg {
-  background-image: url('C:\Users\siva\OneDrive\Desktop\ev-project\charging-station-frontend\src\assets\logoev2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-}
-</style>
+
+
+
+
+
