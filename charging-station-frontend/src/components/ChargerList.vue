@@ -121,7 +121,7 @@ export default {
     async loadStations() {
       const token = localStorage.getItem('token')
       try {
-        const res = await axios.get('http://localhost:5000/api/stations', {
+        const res = await axios.get('https://ev-project-backend-17g4.onrender.com/api/stations', {
           headers: { Authorization: `Bearer ${token}` }
         })
         this.stations = res.data.filter(s => s && s.name)
@@ -134,7 +134,7 @@ export default {
       const toast = useToast()
       const token = localStorage.getItem('token')
       try {
-        const res = await axios.post('http://localhost:5000/api/stations', {
+        const res = await axios.post('https://ev-project-backend-17g4.onrender.com/api/stations', {
           name: this.form.name,
           location: {
             lat: this.form.lat,
@@ -169,7 +169,7 @@ export default {
     async deleteStation(id) {
       const token = localStorage.getItem('token')
       try {
-        await axios.delete(`http://localhost:5000/api/stations/${id}`, {
+        await axios.delete(`https://ev-project-backend-17g4.onrender.com/api/stations/${id}`, {
           headers: { Authorization: `Bearer ${token}` }
         })
         this.stations = this.stations.filter(s => s && s._id !== id)
@@ -188,7 +188,7 @@ export default {
     async saveEdit(index, station) {
       const token = localStorage.getItem('token')
       try {
-        const res = await axios.put(`http://localhost:5000/api/stations/${station._id}`, {
+        const res = await axios.put(`https://ev-project-backend-17g4.onrender.com/api/stations/${station._id}`, {
           name: station.name,
           location: {
             lat: station.location.lat,
