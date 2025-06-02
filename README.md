@@ -52,7 +52,7 @@ The Home Page displays a filter panel to search charging stations by status, con
 ![image alt](https://github.com/SivapriyaRadhakrishnan/EV-project/blob/97a1ea1c9687c651fc36b4157e5f190ef2e92320/charging-station-backend/Screenshot%202025-06-01%20000736.png)
 # Screenshot of View Map
 The View Map page displays all onboarded charging stations on an interactive map, allowing users to visually explore their locations in real time.
-![image alt]()
+![image alt](https://github.com/SivapriyaRadhakrishnan/EV-project/blob/626a13f3ae454bdc78c622a36cfec375d3d3b2b8/Screenshot%202025-06-01%20001426.png)
 # Screenshot of Charging Station
 The Charging Station page allows users to add, edit, or delete EV charging stations, and view all station details in a structured table format with a modern UI.
 ![image alt]()
