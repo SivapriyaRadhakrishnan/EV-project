@@ -46,7 +46,7 @@ ev-charging-station/
 # Screenshot of Login page
 ![image alt](https://github.com/SivapriyaRadhakrishnan/EV-project/blob/9f315bef74224c646c5322e0bac0f22f8bf605ac/Screenshot%202025-06-02%20125427.png)
 # Screenshot of Register
-![image alt]()
+![image alt](https://github.com/SivapriyaRadhakrishnan/EV-project/blob/4c14227282e656540129684f108a461e91b75213/Screenshot%202025-06-02%20125447.png)
 # Screenshot of Homepage
 The Home Page displays a filter panel to search charging stations by status, connector type, and power output, along with a table listing all available charging stations and their details.
 ![image alt](https://github.com/SivapriyaRadhakrishnan/EV-project/blob/97a1ea1c9687c651fc36b4157e5f190ef2e92320/charging-station-backend/Screenshot%202025-06-01%20000736.png)
