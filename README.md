@@ -1,6 +1,8 @@
 # Summary
 
 In this project, I developed a complete end-to-end web application for charging station management and location-based recommendations, integrating both visual UI and backend intelligence. The goal was to simplify the management of electric vehicle (EV) charging stations, while also delivering a smooth, user-friendly experience with real-time map visualization, filtering, and station tracking.On the frontend, I built a responsive single-page application using  Vue 3 and  Bootstrap 5, allowing users to register, log in, and manage charging stations through an intuitive interface. Key UI features include an interactive map powered by Leaflet.js and filter panels with support for connector types, power range, and station status.The backend is powered by Node.js and Express, featuring a secure JWT-based authentication system and RESTful APIs for station management. All user and station data is stored in  MongoDB Atlas, and the app was deployed using  Render.
+# Live Website:
+Anyone can visit and use the deployed application at https://ev-project-frontend.onrender.com without needing to set it up locally.
 # Requirements
 
 | Requirement                | Used For                                     |
@@ -22,24 +24,25 @@ JWT_SECRET=your_secret_key
 # Repository Structure
 
 ev-charging-station/
-├── charging-station-backend/ # Node.js + Express backend
-│ ├── server.js # Main entry point
-│ ├── models/ # Mongoose models
-│ ├── routes/ # API routes (auth, stations)
-│ ├── controllers/ # Logic for handling requests
-│ ├── middleware/ # Auth middleware (JWT check)
-│ └── package.json # Backend dependencies
+├── charging-station-backend/       # Node.js + Express backend
+│   ├── server.js                   # Main entry point
+│   ├── models/                     # Mongoose models (User, Station)
+│   ├── routes/                     # API routes (auth, stations)
+│   ├── controllers/                # Business logic for each route
+│   ├── middleware/                 # JWT authentication middleware
+│   └── package.json                # Backend dependencies
 │
-├── charging-station-frontend/ # Vue 3 frontend
-│ ├── src/
-│ │ ├── components/ # Vue components (Login, MapView, ChargerList)
-│ │ ├── router/ # Vue Router setup
-│ │ └── App.vue # Root component
-│ ├── public/
-│ └── package.json # Frontend dependencies
+├── charging-station-frontend/      # Vue 3 frontend
+│   ├── src/
+│   │   ├── components/             # Vue components (Login, MapView, ChargerList, etc.)
+│   │   ├── router/                 # Vue Router configuration
+│   │   └── App.vue                 # Main app component
+│   ├── public/                     # Public assets and index.html
+│   └── package.json                # Frontend dependencies
 │
-├── .gitignore # Ignore node_modules, .env, etc.
-├── README.md # Project documentation
+├── .gitignore                      # Ignore node_modules, .env, etc.
+├── README.md                       # Project documentation
+
 
 # Note:"The first load might take a few seconds as the server wakes up."
 
@@ -55,7 +58,7 @@ The View Map page displays all onboarded charging stations on an interactive map
 ![image alt](https://github.com/SivapriyaRadhakrishnan/EV-project/blob/626a13f3ae454bdc78c622a36cfec375d3d3b2b8/Screenshot%202025-06-01%20001426.png)
 # Screenshot of Charging Station
 The Charging Station page allows users to add, edit, or delete EV charging stations, and view all station details in a structured table format with a modern UI.
-![image alt]()
+![image alt](https://github.com/SivapriyaRadhakrishnan/EV-project/blob/87a135487fd5ddf5c3bccc160a3ee19d248ba169/Screenshot%202025-06-02%20125401.png)
 
 
 
