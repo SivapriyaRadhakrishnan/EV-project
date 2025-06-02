@@ -21,29 +21,6 @@ Make sure .env is created in charging-station-backend/ with:
 MONGO_URI=your_mongo_uri
 JWT_SECRET=your_secret_key
 
-# Repository Structure
-
-ev-charging-station/
-├── charging-station-backend/       # Node.js + Express backend
-│   ├── server.js                   # Main entry point
-│   ├── models/                     # Mongoose models (User, Station)
-│   ├── routes/                     # API routes (auth, stations)
-│   ├── controllers/                # Business logic for each route
-│   ├── middleware/                 # JWT authentication middleware
-│   └── package.json                # Backend dependencies
-│
-├── charging-station-frontend/      # Vue 3 frontend
-│   ├── src/
-│   │   ├── components/             # Vue components (Login, MapView, ChargerList, etc.)
-│   │   ├── router/                 # Vue Router configuration
-│   │   └── App.vue                 # Main app component
-│   ├── public/                     # Public assets and index.html
-│   └── package.json                # Frontend dependencies
-│
-├── .gitignore                      # Ignore node_modules, .env, etc.
-├── README.md                       # Project documentation
-
-
 # Note:"The first load might take a few seconds as the server wakes up."
 
 # Screenshot of Login page
