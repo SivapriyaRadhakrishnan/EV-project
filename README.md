@@ -44,7 +44,7 @@ ev-charging-station/
 # Note:"The first load might take a few seconds as the server wakes up."
 
 # Screenshot of Login page
-![image alt]()
+![image alt](https://github.com/SivapriyaRadhakrishnan/EV-project/blob/9f315bef74224c646c5322e0bac0f22f8bf605ac/Screenshot%202025-06-02%20125427.png)
 # Screenshot of Register
 ![image alt]()
 # Screenshot of Homepage
